@@ -1,11 +1,11 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: master
+name: pull request
 
 on:
-  push:
-    branches: [master]
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
 
 jobs:
   build:
@@ -17,17 +17,17 @@ jobs:
           - windows-latest
           - ubuntu-latest
         node-version:
-          - 17
+          - 20
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Cache node_modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ./node_modules
           key: ${{ matrix.os }}-${{ matrix.node-version }}-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
@@ -40,12 +40,10 @@ jobs:
 
       - run: yarn install --frozen-lockfile
 
-      - run: yarn dist --publish onTagOrDraft
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run: yarn dist --publish never
 
       - name: Upload Build
-        uses: actions/upload-artifact@v2.2.2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.os }}-${{ matrix.node-version }}
           path: ./dist
