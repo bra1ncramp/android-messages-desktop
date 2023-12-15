@@ -1,17 +1,17 @@
 {
   "name": "android-messages-desktop",
   "description": "Messages for web, as a desktop app",
-  "version": "5.4.2",
+  "version": "5.4.3",
   "author": {
     "name": "Michael Golla",
     "email": "mjgolla@outlook.com"
   },
   "license": "MIT",
-  "copyright": "Copyright 2020 Kyle Rosenberg",
+  "copyright": "Copyright 2020 Michael Golla",
   "homepage": "https://github.com/bra1ncramp/android-messages-desktop",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bra1ncramp/android-messages-desktop"
+    "url": "git+https://github.com/bra1ncramp/android-messages-desktop.git"
   },
   "bugs": {
     "url": "https://github.com/bra1ncramp/android-messages-desktop/issues"
@@ -28,33 +28,33 @@
   },
   "dependencies": {
     "about-window": "1.15.2",
-    "electron-updater": "5.2.1",
-    "fs-jetpack": "^4.3.1",
-    "rxjs": "^7.5.6",
+    "electron-updater": "6.1.7",
+    "fs-jetpack": "^5.1.0",
+    "rxjs": "^7.8.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@types/node": "18.7.18",
-    "@types/uuid": "^8.3.4",
+    "@types/node": "20.10.4",
+    "@types/uuid": "^9.0.0",
     "@types/webpack": "^5.28.0",
-    "@types/webpack-node-externals": "^2.5.3",
-    "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
+    "@types/webpack-node-externals": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "cross-env": "^7.0.2",
-    "electron": "20.1.4",
-    "electron-builder": "^23.3.3",
-    "eslint": "^8.23.1",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "electron": "28.0.0",
+    "electron-builder": "^24.9.1",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "png2icons": "^2.0.1",
-    "prettier": "^2.7.1",
+    "prettier": "^3.1.1",
     "source-map-support": "^0.5.21",
-    "ts-loader": "^9.3.1",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.8.3",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-merge": "^5.8.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.10.0",
     "webpack-node-externals": "^3.0.0"
   }
 }

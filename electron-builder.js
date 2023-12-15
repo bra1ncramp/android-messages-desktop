@@ -2,7 +2,7 @@ module.exports = {
   appId: "pw.kmr.amd",
   artifactName: "${productName}-v${version}-${os}-${arch}.${ext}",
   productName: "Android Messages",
-  copyright: "Copyright 2020 Kyle Rosenberg",
+  copyright: "Copyright 2023 Michael Golla",
   files: ["app/**/*", "resources/**/*"],
   directories: {
     buildResources: "resources",
