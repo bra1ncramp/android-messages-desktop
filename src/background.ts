@@ -134,9 +134,6 @@ if (gotTheLock) {
         event.preventDefault();
         mainWindow.hide();
         trayManager?.showMinimizeToTrayWarning();
-        if (process.platform === "darwin") {
-          app.dock.hide();
-        }
       } else {
         app.quit(); // If we don't explicitly call this, the webview and mainWindow get destroyed but background process still runs.
       }
