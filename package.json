@@ -3,18 +3,18 @@
   "description": "Messages for web, as a desktop app",
   "version": "5.4.2",
   "author": {
-    "name": "Kyle Rosenberg",
-    "email": "kyle@ekrosenberg.com"
+    "name": "Michael Golla",
+    "email": "mjgolla@outlook.com"
   },
   "license": "MIT",
   "copyright": "Copyright 2020 Kyle Rosenberg",
-  "homepage": "https://github.com/OrangeDrangon/android-messages-desktop",
+  "homepage": "https://github.com/bra1ncramp/android-messages-desktop",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OrangeDrangon/android-messages-desktop.git"
+    "url": "git+https://github.com/bra1ncramp/android-messages-desktop"
   },
   "bugs": {
-    "url": "https://github.com/OrangeDrangon/android-messages-desktop/issues"
+    "url": "https://github.com/bra1ncramp/android-messages-desktop/issues"
   },
   "main": "app/background.js",
   "scripts": {
