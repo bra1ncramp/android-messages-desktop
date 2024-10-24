@@ -19,20 +19,20 @@ const {
 export const settingsMenu: MenuItemConstructorOptions = {
   label: IS_MAC ? "&Preferences" : "&Settings",
   submenu: [
-    {
-      // This option doesn't apply to Mac, so this hides it but keeps the order of menu items
-      // to make updating based on array indices easier.
-      visible: !IS_MAC,
-      id: "autoHideMenuBarMenuItem",
-      label: "Auto Hide Menu Bar",
-      type: "checkbox",
-      checked: autoHideMenuEnabled.value,
-      click: (item: MenuItem, window?: BrowserWindow): void => {
-        autoHideMenuEnabled.next(item.checked);
-        window?.setMenuBarVisibility(!autoHideMenuEnabled.value);
-        window?.setAutoHideMenuBar(autoHideMenuEnabled.value);
-      },
-    },
+    // {
+    //   // This option doesn't apply to Mac, so this hides it but keeps the order of menu items
+    //   // to make updating based on array indices easier.
+    //   visible: !IS_MAC,
+    //   id: "autoHideMenuBarMenuItem",
+    //   label: "Auto Hide Menu Bar",
+    //   type: "checkbox",
+    //   checked: autoHideMenuEnabled.value,
+    //   click: (item: MenuItem, window?: BrowserWindow): void => {
+    //     autoHideMenuEnabled.next(item.checked);
+    //     window?.setMenuBarVisibility(!autoHideMenuEnabled.value);
+    //     window?.setAutoHideMenuBar(autoHideMenuEnabled.value);
+    //   },
+    // },
     {
       ...separator,
       visible: !IS_MAC,
