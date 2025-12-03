@@ -15,7 +15,7 @@ let descriptionWithLocale = "";
 app.on("ready", () => {
   languageCode = app.getLocale();
   // about-window does not have a field for arbitrary HTML, so we add the HTML we need to an existing field
-  descriptionWithLocale = `Messages for web, as a desktop app. <a href="https://github.com/OrangeDrangon/android-messages-desktop">Github Repo</a><span style="${localeStyle}">${languageCode}</span>`;
+  descriptionWithLocale = `Messages for web, as a desktop app. <a href="https://github.com/bra1ncramp/android-messages-desktop">Github Repo</a><span style="${localeStyle}">${languageCode}</span>`;
 });
 
 export const aboutMenuItem: MenuItemConstructorOptions = {
@@ -23,7 +23,7 @@ export const aboutMenuItem: MenuItemConstructorOptions = {
   click: () => {
     openAboutWindow({
       icon_path: path.resolve(RESOURCES_PATH, "icons", "512x512.png"),
-      copyright: `<div style="text-align: center">Copyright (c) 2020 Kyle Rosenberg${disclaimerText}${licenseText}</div>`,
+      copyright: `<div style="text-align: center">Copyright (c) 2023 Michael Golla${disclaimerText}${licenseText}</div>`,
       product_name: productName,
       description: descriptionWithLocale,
       open_devtools: false,
