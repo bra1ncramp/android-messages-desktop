@@ -141,9 +141,9 @@ if (gotTheLock) {
         event.preventDefault();
         mainWindow.hide();
         trayManager?.showMinimizeToTrayWarning();
-        if (IS_MAC) {
-          app.dock?.hide();
-        }
+        // if (IS_MAC) {  // We comment this out so that the app doesn't dissapear in the background.
+        //   app.dock?.hide();
+        // }
       } else {
         app.quit(); // If we don't explicitly call this, the webview and mainWindow get destroyed but background process still runs.
       }
